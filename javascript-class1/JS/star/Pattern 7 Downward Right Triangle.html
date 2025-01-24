@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Pattern 7: Downward Right Triangle
+    let num = 5;
+    let patten = "";
+
+    if (num > 1) {
+      for (let i = num; i >= 1; i--) {
+        for (let j = 1; j <= (num - i); j++) {
+          patten += "  ";
+        }
+        for (let k = 1; k <= i; k++) {
+          patten += "* ";
+        }
+        patten += "\n";
+      }
+      console.log(patten);
+    }
+
+
+  </script>
+</body>
+
+</html>
