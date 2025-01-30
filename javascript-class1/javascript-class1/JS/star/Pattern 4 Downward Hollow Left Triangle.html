@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Pattern 4: Downward Hollow Left Triangle
+    let num = 5;
+    let pattan = "";
+
+    if (num > 1) {
+      for (let i = 1; i <= num; i++) {
+        for (let j = 0; j <= (num - i); j++) {
+          if (j == 0 || j == (num - i) || i == 1) {
+            pattan += "* "
+          } else {
+            pattan += "  "
+          }
+        }
+        pattan += "\n"
+      }
+    }
+    console.log(pattan);
+
+  </script>
+</body>
+
+</html>

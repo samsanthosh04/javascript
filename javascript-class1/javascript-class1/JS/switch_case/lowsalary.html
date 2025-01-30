@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+let value1 = parseInt(prompt("1 person salary"));
+let value2 = parseInt(prompt("2 person salary"));
+let value3 = parseInt(prompt("3 person salary"));
+
+let reslut;
+
+switch (true) {
+  case (value1 <= value2 && value1 <= value3):
+  reslut = value1;
+    break;
+  case (value2 <= value1 && value2 <= value3):
+    minSalary = value2;
+    break;
+  default:
+    minSalary = value3;
+}
+
+console.log("The minimum salary is: " + minSalary);
+
+
+
+    </script>
+</body>
+</html>

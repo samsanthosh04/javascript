@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // determines the season, based on a given month
+
+        let month = prompt("enter month")
+        let season;
+
+        switch (month) {
+            case "December":
+            case "January":
+            case "February":
+                season = "Winter";
+                break;
+
+            case "March":
+            case "April":
+            case "May":
+                season = "Spring";
+                break;
+
+            case "June":
+            case "July":
+            case "August":
+                season = "Summer";
+                break;
+            case "September":
+            case "October":
+            case "November":
+                season = "Autumn";
+                break;
+            default:
+                season = "worng"
+        }
+
+        console.log("entered month is " + season)
+
+        //         let month = parseInt(prompt("Enter month (1-12)"));
+
+        // let season;
+
+        // switch (month) {
+        //   case 12:
+        //   case 1:
+        //   case 2:
+        //     season = "Winter";
+        //     break;
+        //   case 3:
+        //   case 4:
+        //   case 5:
+        //     season = "Spring";
+        //     break;
+        //   case 6:
+        //   case 7:
+        //   case 8:
+        //     season = "Summer";
+        //     break;
+        //   case 9:
+        //   case 10:
+        //   case 11:
+        //     season = "Autumn";
+        //     break;
+        //   default:
+        //     season = "Invalid month";
+        // }
+
+        // console.log("The season is: " + season);
+
+
+
+
+    </script>
+</body>
+
+</html>

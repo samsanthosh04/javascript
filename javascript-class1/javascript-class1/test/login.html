@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// get user name using promt
+    let username = prompt("please enter your username");
+    let uname = "santhosh" 
+    let psd = "santhosh123" 
+    
+    if (uname == username){
+        let password = prompt("please enter your password")
+        if (psd == password) {
+            console.log("login success")
+        } else if ("" == password) {
+            alert("please fill password")
+        } else if (null == password) {
+            alert("password empty")
+        } else {
+           alert("incorrect password")
+        }
+    } else if ("" == username) {
+            console.log(alert("please fill username"))
+    } else if (null == username) {
+            console.log(alert("username empty"))
+    } else {
+        alert("incorrect username")
+    }
+
+    </script>
+</body>
+</html>
