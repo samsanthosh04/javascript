@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // check if the number is odd or even.
+
+    // let a = parseInt(prompt("enter your number"));
+    // try {
+    //   if (isNaN(a)) throw "please enter correct number not word";
+    //   if ((a % 2) != 0) throw "Entered number is odd";
+    //   if ((a % 2) == 0) throw "Entered number is even";
+    // }
+    // catch (errorMessage) {
+    //   console.log(errorMessage);
+    // }
+    // finally {
+    //   console.log("finally code is working");
+    // }
+
+    // let a = parseInt(prompt("Enter your percentage"));
+    // try {
+    //   if (a > 80) throw "grade A";
+    //   if (a > 60) throw "grade B";
+    //   if (a > 30) throw "grade C";
+    //   if (a > 0) throw "grade D";
+    // }
+    // catch (mesg) {
+    //   console.log(mesg);
+    // }
+    // finally {
+    //   "work"
+    // }
+
+    // 5. determines the season, based on a given month completed
+    let a = prompt("get your season")
+    try {
+      if ((a == "February") || (a == "March") || (a == "April")) throw "Spring"
+      if ((a == "May") || (a == "June") || (a == "July")) throw "Summer"
+      if ((a == "August") || (a == "September") || (a == "October")) throw "Autumn"
+      if ((a == "November") || (a == "December") || (a == "January")) throw "Winter"
+    }
+    catch (mesg) {
+      console.log(mesg);
+    }
+    finally {
+      "work"
+    }
+
+  </script>
+</body>
+
+</html>

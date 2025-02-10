@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+
+    let x = parseInt(prompt("enter your number"));
+
+
+    try {
+      if (isNaN(x)) throw "is not a number";
+      x = Number(x);
+      if (x > 10) throw "is too high";
+      if (x < 5) throw "is too low";
+    }
+    catch (e) {
+      console.log(e);
+    }
+    finally {
+      console.log("last code working");
+    }
+
+
+
+
+
+  </script>
+</body>
+
+</html>

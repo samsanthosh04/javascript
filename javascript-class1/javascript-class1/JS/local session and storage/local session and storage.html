@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    localStorage.setItem("key_1", "value_1")
+    localStorage.setItem("key_2", "value_2")
+    localStorage.setItem("key_3", "value_3")
+    localStorage.setItem("key_4", "value_4")
+    localStorage.setItem("key_5", "value_5")
+    localStorage.setItem("key_6", "value_6")
+
+    var name_3 = localStorage.getItem("key_3");
+    console.log(name_3);
+
+    localStorage.removeItem("key_5");
+
+    // localStorage.clear();
+
+    sessionStorage.setItem("key_1", "value_1")
+    sessionStorage.setItem("key_2", "value_2")
+    sessionStorage.setItem("key_3", "value_3")
+    sessionStorage.setItem("key_4", "value_4")
+    sessionStorage.setItem("key_5", "value_5")
+    sessionStorage.setItem("key_6", "value_6")
+
+    var name_3 = sessionStorage.getItem("key_3");
+    console.log(name_3);
+
+    sessionStorage.removeItem("key_5");
+
+    // sessionStorage.clear();
+
+
+
+
+  </script>
+</body>
+
+</html>
