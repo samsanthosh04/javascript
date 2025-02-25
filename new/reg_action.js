@@ -11,6 +11,7 @@ form.addEventListener('submit',(e)=>{
     } 
     if(validateInputs() === true){
         addName()
+        handleSubmit()
         goBack()
     }    
 })
@@ -112,6 +113,12 @@ const validateEmail = (email) => {
     localStorage.setItem("userdatails", JSON.stringify([...JSON.parse(localStorage.getItem("userdatails") || "[]"), user]));
   }
 
+  function handleSubmit() {
+    alert("Form Submitted!");
+    // You can add form submission logic here (like sending data to a server)
+  }
+
+  // JavaScript function to navigate back to the previous page
   function goBack() {
-    location.href='form.html'
+    window.history.back();
   }
