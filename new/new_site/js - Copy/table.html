@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <lable>FirstName:</lable>
+      <input type="text" id="f_name" />
+      <br /><br />
+      <lable>LastName:</lable>
+      <input type="text" id="l_name" /><br /><br />
+      <lable>Email:</lable>
+      <input type="text" id="email" /><br /><br />
+      <lable>Mobile:</lable>
+      <input type="text" id="mobile" /><br /><br />
+      <button type="button" onclick="submit()">Submit</button><br /><br />
+
+      <section>
+        <table border="1" cellpadding="20">
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                  </tr>
+            </thead>
+         
+            <tbody id="tableBody">
+
+            </tbody>
+        
+        </table>
+      </section>
+    </div>
+
+    <script>
+      function submit() {
+
+        var fName = document.getElementById('f_name').value
+        var lName = document.getElementById('l_name').value
+        var email = document.getElementById('email').value
+        var mobile = document.getElementById('mobile').value
+
+        var data = {
+            firstName: fName,
+            lastName: lName,
+            email:email,
+            mobile:mobile
+        }
+        console.log(data,"data");
+        
+
+        var getLocalData = JSON.parse(localStorage.getItem("userDetails"))  || []
+        console.log(getLocalData,"getLocalData");
+
+        getLocalData.push(data)
+        localStorage.setItem("userDetails",JSON.stringify(getLocalData))
+
+        console.log(getLocalData,"getLocalDataqqqqqqqqqqqq");
+        
+
+        // var getLocalData = localStorage.getItem("userDetails") || []
+        // console.log(getLocalData,"getLocalData");
+        displayData()
+      }
+
+      function displayData() {
+        var getLocalData = JSON.parse(localStorage.getItem("userDetails")) || [];
+
+        var tableBody = document.getElementById('tableBody');
+        // tableBody.innerHTML = ''; // Clear any existing rows
+
+        getLocalData.forEach(function(user,index) {
+          var row = `
+            <tr>
+              <td>${user.firstName}</td>
+              <td>${user.lastName}</td>
+              <td>${user.email}</td>
+              <td>${user.mobile}</td>
+              <td>
+                <button type="button" onclick=edit(${index})>Edit</button>
+                   <button type="button" onclick=delete(${index}>Delete</button>
+                </td>
+            </tr>
+          `;
+          tableBody.innerHTML += row;
+        });
+      }
+
+
+      // function f1(cb){
+      //   console.log("function 1 is working");
+      //   cb()
+      // }
+      // function f2(){
+      //   console.log("function 2 is working");
+      // }
+      // f1(f2)
+
+      // function add(x,y,cb){
+      //   res = x + y
+      //   console.log(res,"add");
+      //   cb(res)
+        
+      // }
+      // function sub(val1){
+      //   var subValue = val1 - 10
+      //   console.log(subValue,"sub");
+
+      // }
+      // add(12,12,sub)
+      
+    </script>
+  </body>
+</html>

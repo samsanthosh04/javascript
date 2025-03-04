@@ -1,0 +1,9 @@
+@mixin barder {
+    border: 1px solid red;
+}
+@mixin bgb {
+    background-color: black;
+}
+@mixin bgw {
+    background-color: white;
+}

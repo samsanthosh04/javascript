@@ -1,0 +1,304 @@
+body {
+  margin: auto;
+  padding: 0%;
+}
+
+.navbar {
+  position: sticky;
+  background-color: black;
+  padding: 0px 0px 0px 10px;
+  margin: 0px;
+  display: flex;
+  height: 100px;
+  top: 0;
+  z-index: 5;
+}
+.navbar .menu_logo {
+  background-color: black;
+  width: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0 16px 0 20px;
+  padding-right: 12px;
+}
+.navbar .menu_logo a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+}
+.navbar .menu {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  background-color: white;
+}
+.navbar .menu ul {
+  align-items: center;
+  display: flex;
+  width: 85%;
+  justify-content: flex-end;
+  background-color: white;
+  background-color: white;
+}
+.navbar .menu ul li {
+  text-wrap: wrap;
+  list-style: none;
+  padding: 10px 10px 10px 20px;
+  text-align: center;
+}
+.navbar .menu ul li a {
+  text-decoration: none;
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  color: #4d4d4d;
+  font-weight: 500;
+  position: relative;
+  transition: 0.1s;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.navbar .menu ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 6px;
+  left: 0;
+  background-color: yellow;
+  margin-top: 30px;
+  bottom: 0px;
+  transition: linear;
+}
+.navbar .menu ul li a:hover {
+  color: black;
+}
+.navbar .menu ul li a:hover:after {
+  width: 100%;
+}
+
+.navbar_2 {
+  height: 750px;
+  border: 1px solid red;
+  display: flex;
+  padding-left: 45px;
+  padding-right: 15px;
+  background-color: black;
+}
+.navbar_2 .sec_1 {
+  border: 1px solid red;
+  padding-top: 57px;
+  position: absolute;
+  top: 84%;
+  left: 2.1%;
+  right: 0;
+  padding: 0 14px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 1;
+}
+.navbar_2 .sec_1 .rule {
+  width: 100px;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  position: relative;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  border: 1px solid red;
+  padding-bottom: 10px;
+  color: white;
+  margin-bottom: 10px;
+}
+.navbar_2 .sec_1 .rule:after {
+  content: "";
+  position: absolute;
+  padding-bottom: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  width: 100%;
+  background: #fcd307;
+  z-index: -1;
+}
+.navbar_2 .sec_1 .main_head {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 90px;
+  font-weight: 800;
+  width: 500px;
+  line-height: 1.2;
+}
+.navbar_2 .sec_1 .sub_head {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  width: 500px;
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+.navbar_2 .sec_1 .heading {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  position: relative;
+  background-color: black;
+  color: white;
+  border: 1px solid red;
+  z-index: 1;
+}
+.navbar_2 .sec_1 .heading a {
+  color: white;
+  text-decoration: none;
+}
+.navbar_2 .sec_1 .heading::after {
+  content: "";
+  position: absolute;
+  padding-bottom: 0;
+  top: -75%;
+  bottom: 0;
+  left: 38px;
+  right: 0;
+  height: 60px;
+  width: 100%;
+  background: #fcd307;
+  z-index: -1;
+}
+.navbar_2 video {
+  background-image: url(.//pexels-photo-674010.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 750px;
+  width: 80%;
+  top: 16.4%;
+  left: 100;
+  right: 0;
+}
+
+.body_main {
+  display: flex;
+  margin: auto;
+  border: 1px solid red;
+  height: 870px;
+  width: 85%;
+  background-color: #5c5c5a;
+}
+.body_main .right {
+  border: 1px solid red;
+  width: 40%;
+  background-image: url("https://preview.colorlib.com/theme/whitespace/images/about.jpg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: 96px;
+}
+.body_main .left {
+  border: 1px solid red;
+  padding-top: 48px;
+  padding-right: 48px;
+}
+.body_main .left .div_heading {
+  padding: 48px 0px 0px 48px;
+  margin-bottom: 48px;
+  text-align: right;
+  margin-right: 48px;
+}
+.body_main .left .div_heading p {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fcd307;
+}
+.body_main .left .div_heading h4 {
+  margin-top: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.body_main .left .div_main {
+  margin-bottom: 48px;
+  text-align: right;
+  margin-right: 48px;
+  height: 105px;
+  border: 1px solid red;
+}
+.body_main .left .div_main .box_container {
+  display: flex;
+  margin-bottom: 48px;
+  margin-left: 48px;
+}
+.body_main .left .div_main .box_container .icon {
+  line-height: 1.3;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #000000;
+  border-radius: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.body_main .left .div_main .box_container .icon .icon_1 {
+  background-image: url(./download.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80px;
+  height: 80px;
+}
+.body_main .left .div_main .box_container .box {
+  text-align: right;
+  margin-right: 24px;
+  border: 1px solid red;
+  height: 105px;
+}
+.body_main .left .div_main .box_container .box h3 {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.body_main .left .div_main .box_container .box p {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #666666;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.container_4 {
+  border: 1px solid red;
+  margin: auto;
+  width: 80%;
+  height: 367px;
+  margin-top: 90px;
+  margin-top: 90px;
+}
+.container_4 .image {
+  border: 1px solid red;
+}/*# sourceMappingURL=styles.css.map */
