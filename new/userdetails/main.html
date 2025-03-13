@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INPUT PAGE</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="sript_file.js" defer></script>
+  <title>LOGIN</title>
+
+</head>
+
+<body>
+  <!-- <section class="container">
+    <section class="main">
+      <button onclick="location.href='reg_form.html'">
+        ADD USER
+      </button>
+    </section> -->
+  <div class="head"> User Management</div>
+
+  <section id=edit class="edit">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      ADD USER
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="clo()"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="" id="form">
+                <div class="input_group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username">
+                  <div class="error"></div>
+                </div>
+
+                <div class="input_group">
+                  <label for="username">Email:</label>
+                  <input type="text" id="email" name="email">
+                  <div class="error"></div>
+                </div>
+
+                <div class="input_group">
+                  <label for="username">Password:</label>
+                  <input type="password" id="password" name="password">
+                  <div class="error"></div>
+                </div>
+
+                <div class="input_group">
+                  <label for="username">Confirm Password:</label>
+                  <input type="password" id="cpassword" name="cpassword">
+                  <div class="error"></div>
+                </div>
+                <button type="submit">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="table_1">
+    <table>
+      <tr>
+        <th>SL.NO</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>confirm Password</th>
+        <th>Actions</th>
+      </tr>
+      <tbody id="add"></tbody>
+    </table>
+  </section>
+  </section>
+
+
+
+
+
+</body>
+
+</html>
